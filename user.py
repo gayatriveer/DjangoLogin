@@ -44,6 +44,9 @@ class User(Base):
     lastlogout= Column(DateTime())
     passid= Column(Integer,foreign_key=True)
 
+class PasswordList(Base):
+
+
 
 
 Base.metadata.create_all(bind=engine)

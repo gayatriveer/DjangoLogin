@@ -45,6 +45,12 @@ class User(Base):
     passid= Column(Integer,foreign_key=True)
 
 class PasswordList(Base):
+    __tablename__= 'passwordlist'
+    passid= Column( Integer,primary_key=True,unique=True)
+    pass1= Column(String(150),nullable= False)
+    pass2= Column(String(150))
+    pass3= Column(String(150))
+
 
 
 
